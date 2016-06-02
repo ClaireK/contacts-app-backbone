@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Backbone Contacts App</title>
+		<link href='http://fonts.googleapis.com/css?family=Raleway:500,700,300' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="/style.css">
+	</head>
+	<body>
+		<main id="main">
+			<header>
+				<h1><a href="/">Backbone <span>{</span> Contacts App <span>}</span></a></h1>
+			</header>
+			<div id="app">
+				
+			</div>
+		</main>
+
+		<script type="text/template" id="ContactsItemViewTemplate">
+			<a href="/contacts/<%= id %>"> <%= firstName %> <%= lastName %> : <span> <%= email %> </span> </a>
+		</script>
+
+		<script type="text/template" id="ContactViewTemplate">
+			<button class="back"> &#8678; </button>
+			<div class="input__fields">
+				<h2> <%= firstName %> <%= lastName %> </h2>
+				<p> <label for="firstName"> First Name: </label> <input id="firstName" type="text" name="First Name" value="<%= firstName %>"> </p>
+				<p> <label for="lastName"> Last Name: </label> <input id="lastName" type="text" name="Last Name" value="<%= lastName %>"> </p>
+				<p> <label for="email"> Email: </label> <input id="email" type="email" name="Email" value="<%= email %>"> </p>
+			</div>
+			<p>
+				<button class="update"> Update </button>
+				<button class="delete"> Delete </button>
+			</p>
+		</script>
+
+		<script type="text/template" id="NewContactViewTemplate">
+			<button class="back"> &#8678; </button>
+			<div class="input__fields">
+				<h2> New Contact </h2>
+				<p> <label for="firstName"> First Name: </label> <input id="firstName" type="text" name="First Name"> </p>
+				<p> <label for="lastName"> Last Name: </label> <input id="lastName" type="text" name="Last Name"> </p>
+				<p> <label for="email"> Email: </label> <input id="email" type="email" name="Email"> </p>
+			</div>
+			<p>
+				<button class="add"> Add Contact </button>
+			</p>
+		</script>
+
+		<script type="text/javascript" src="/lib/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="/lib/underscore/underscore-min.js"></script>
+		<script type="text/javascript" src="/lib/backbone/backbone-min.js"></script>
+		<script type="text/javascript" src="/app.js"></script>
+	</body>
+</html>

@@ -1,0 +1,126 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #161616;
+	color: GhostWhite;
+	font-family: 'Raleway',Arial,"Helvetica Neue",Helvetica,sans-serif;
+	text-align: center;
+	font-size: 1em;
+}
+
+h1, h2 {
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+h1 {
+	margin-bottom: 50px;
+}
+
+h1 a:hover, h2 a:hover {
+	background: none;
+}
+
+h1 span {
+	color: #e64759;
+}
+
+h2 {
+	color: #9f86ff;
+}
+
+a, button {
+	color: WhiteSmoke;
+	text-decoration: none;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+
+a:hover {
+	background-color: #1bc98e;
+}
+
+#main {
+	width: 80%;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.actions {
+	display: block;
+	position: relative;
+}
+
+.actions a, button {
+	display: inline-block;
+	color: #1997c6;
+	padding: 10px;
+	border: 1px solid #1997c6;
+	border-radius: 5px;
+	background: none;
+	font-size: 1rem;
+	outline: none;
+}
+
+.actions a:hover, button:hover {
+	background-color: #1997c6;
+	color: WhiteSmoke;
+}
+
+#app {
+	position: relative;
+	display: block;
+	padding: 0px;
+}
+
+#app ul {
+	list-style: none;
+	padding: 0;
+	margin: 50px 0;
+}
+
+#app ul li {
+	margin-bottom: 10px;
+	border: 1px solid #434857;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+#app ul li a {
+	display: block;
+	padding: 10px;
+}
+
+#app ul li a span {
+	margin-left: 10px;
+	color: #434857;
+	transition: all 0.5s;
+}
+
+#app ul li a:hover span {
+	color: WhiteSmoke;
+}
+
+
+.input__fields {
+	margin: 50px 0;
+}
+
+.input__fields label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.input__fields input {
+	display: block;
+	width: 100%;
+	background: none;
+	color: WhiteSmoke;
+	border: 1px solid #434857;
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 1rem;
+	outline-color: #1bc98e;
+}
